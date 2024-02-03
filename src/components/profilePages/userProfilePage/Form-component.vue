@@ -1,5 +1,5 @@
   <template>
-    <div class="flex bg-secondaryColor rounded-lg container w-full">
+    <div class="flex bg-secondaryColor rounded-lg container ml-28">
       <form class=" w-1/2 mt-3 mr-22">
         <ul>
           <li>

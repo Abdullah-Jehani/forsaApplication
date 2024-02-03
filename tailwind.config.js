@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primaryColor: "#0E2F56",
-        secondaryColor: "#FFFFFF",
+        secondaryColor: "#ECECDA",
         grayText: "#3E3E3E",
         grayBorder: "#AFAFAF",
         cardFill: "#FCFCFC",
@@ -27,4 +27,6 @@ module.exports = {
   variants: {
     extend: {},
   },
+    plugins: [require("daisyui")],
+
 };

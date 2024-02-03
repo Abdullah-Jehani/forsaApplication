@@ -8,9 +8,9 @@
         <li class="pl-20"><a href="#" class="text-primaryColor  hover:border-primaryColor hover:border-b-2 hover:pb-1 hover: duration-100">تواصل معنا</a></li>
         <li class=""><a href="#" class="text-primaryColor hover:border-primaryColor hover:border-b-2 hover:pb-1 hover: duration-100 ">من نحن</a></li>
       </div>
-      <div class="flex list-none justify-between font-cairo"> 
-       <buttonComponent class="px-4 font-semibold rounded " buttonColor="bg-primaryColor hover:bg-sky-950 hover: text-primarycolor"  textClass="text-secondaryColor">انشاء حساب</buttonComponent>
-       <buttonComponent class="border rounded-md hover:border-primaryColor hover: duration-500 " buttonColor="bg-transparent" textClass=" text-primaryColor ">تسجيل الدخول</buttonComponent>
+      <div class="flex justify-between font-cairo"> 
+       <buttonComponent destination="/AccountType" class="px-4 font-semibold rounded " buttonColor="bg-primaryColor hover:bg-sky-950 hover: text-primarycolor"  textClass="text-secondaryColor">انشاء حساب</buttonComponent>
+       <buttonComponent destination="/login" class="border  rounded-md hover:bg-primaryColor hover:duration-500"  buttonColor="bg-secondaryColor" textClass="text-primaryColor ">تسجيل الدخول</buttonComponent>
       </div>
     </nav>
   </template>
