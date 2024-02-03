@@ -1,5 +1,6 @@
-<template>
-    <form class=" w-1/2 mt-3 mr-22">
+  <template>
+    <div class="flex bg-secondaryColor rounded-lg container w-full">
+      <form class=" w-1/2 mt-3 mr-22">
         <ul>
           <li>
             <input-component :disabled="isDisabled" v-model="companyName">
@@ -34,26 +35,33 @@
           </li>
         </ul>
       </form>
-</template>
-<style scoped>
-
-.text{
-  background-color: #D9D9D9;
-  color: black;
-  border: 1px solid #000000;
-  padding: 10px;
-  width: 200px;
-  border-radius: 8px;
-}
-</style>
-<script setup>
-
-import InputComponent from './input-component.vue';
-import { ref } from 'vue';
-const companyName = ref('');
-const companyType = ref('');
-const isDisabled = ref(true);
-function toggleEditMode() {
-  isDisabled.value = !isDisabled.value;
-}
-</script>
+      </div>
+  </template>
+  <style scoped>
+  
+  .text{
+    background-color: #D9D9D9;
+    color: black;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+  }
+  .container{
+    height:65vh ;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  </style>
+  <script setup>
+  
+  import InputComponent from './input-component.vue';
+  import { ref } from 'vue';
+  const companyName = ref('');
+  const companyType = ref('');
+  const isDisabled = ref(true);
+  function toggleEditMode() {
+    isDisabled.value = !isDisabled.value;
+  }
+  </script>
+    

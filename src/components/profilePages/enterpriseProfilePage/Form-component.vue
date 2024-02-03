@@ -1,4 +1,5 @@
 <template>
+  <div class="flex bg-secondaryColor rounded-lg container w-full">
     <form class=" w-1/2 mt-3 mr-22">
         <ul>
           <li>
@@ -37,6 +38,7 @@
           </li>
         </ul>
       </form>
+    </div>
 </template>
 <style scoped>
 
@@ -47,6 +49,11 @@
   padding: 10px;
   width: 200px;
   border-radius: 8px;
+}
+.container{
+  height:65vh ;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 </style>
 <script setup>
