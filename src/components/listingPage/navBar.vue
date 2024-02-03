@@ -18,11 +18,11 @@
       class="flex justify-between items-center gap-20 text-lg text-grayText font-bold"
     >
       <li>
-        <a
-          href="#"
+        <div
           class="text-primaryColor hover:border-primaryColor hover:border-b-2 hover:pb-1 hover: duration-100"
-          >نشر وظيفة</a
         >
+          <router-link to="/jobs/job/apply">نشر وظيفة</router-link>
+        </div>
       </li>
       <li>
         <a
@@ -32,11 +32,11 @@
         >
       </li>
       <li>
-        <a
-          href="#"
+        <div
           class="text-primaryColor hover:border-primaryColor hover:border-b-2 hover:pb-1 hover: duration-100"
-          >تصفح الوظائف</a
         >
+          <router-link to="/jobs">تصفح الوظائف</router-link>
+        </div>
       </li>
     </ul>
     <a href="/"> <h1 class="text-4xl font-bold text-primaryColor">فُرصة</h1></a>

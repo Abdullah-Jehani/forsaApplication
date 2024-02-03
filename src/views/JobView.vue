@@ -8,7 +8,7 @@ import footerView from "../components/footer/footerView.vue";
 </script>
 
 <template>
-  <div class="font-cairo" dir="ltr">
+  <div dir="ltr">
     <NavBar />
     <SearchBar />
     <div class="flex items-center justify-end mt-20 gap-16 px-16">

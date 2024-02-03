@@ -5,7 +5,7 @@ import footerView from "../components/footer/footerView.vue";
 </script>
 
 <template>
-  <div class="font-cairo">
+  <div>
     <NavBar dir="ltr" />
     <JobDescription />
     <footerView />
