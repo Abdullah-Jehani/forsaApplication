@@ -7,6 +7,8 @@ import HomeView from "../views/HomeView.vue";
 import JobView from "../views/JobView.vue";
 import JobDescriptionView from "../views/JobDescriptionView.vue";
 import ApplyJobView from "../views/ApplyJobView.vue";
+import creteJobView from "../views/company/creteJobView.vue";
+import UserProfilePageView from '../views/profile/user/UserProfilePageView.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -30,6 +32,17 @@ const router = createRouter({
       name: "apply",
       component: ApplyJobView,
     },
+    {
+      path: "/jobs/create",
+      name: "create",
+      component: creteJobView,
+    },
+    {
+      path: '/jobs/user/profile' , 
+      name: 'profile',
+      component : UserProfilePageView
+
+    }
   ],
 });
 

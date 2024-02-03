@@ -11,4 +11,5 @@
 import { ref } from 'vue';
 const companyName = ref('');
 const companyType = ref('');
+
 </script>
