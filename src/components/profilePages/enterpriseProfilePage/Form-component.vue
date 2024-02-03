@@ -12,7 +12,7 @@
             <input-component :disabled="isDisabled">
               <template v-slot>رقم الهاتف</template>
             </input-component>
-            <input-component :disabled="isDisabled" v-model="companyType">
+            <input-component :disabled="isDisabled" v-model="companyType" :isDropdowntype="true">
               <template v-slot>تخصص المؤسسة</template>
             </input-component>
           </li>
@@ -26,13 +26,11 @@
             <input-component :isPassword="true" :disabled="isDisabled">
               <template v-slot>رمز المرور</template>
             </input-component>
-            <input-component :disabled="isDisabled">
-              <template v-slot>العنوان</template>
-            </input-component >
+            
             <input-component :disabled="isDisabled" :isInputMessage="true">
-              <template v-slot> السيرة</template>
+              <template v-slot> بايو</template>
             </input-component>
-            <input-component :disabled="isDisabled">
+            <input-component :disabled="isDisabled" :isDropdowncity="true">
               <template v-slot> الموقع</template>
             </input-component>
           </li>

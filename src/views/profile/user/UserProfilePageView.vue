@@ -1,5 +1,5 @@
 <script setup>
-import formComponent from '../../../components/profilePages/userProfilePage/form-component.vue'; 
+import formComponent from '../../../components/profilePages/userProfilePage/Form-component.vue'; 
 import backbuttonComponent from '../../../components/profilePages/userProfilePage/backbuttonComponent.vue';
 import centerPicture from '../../../components/profilePages/userProfilePage/centerPicture.vue';
 </script>

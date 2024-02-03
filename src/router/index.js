@@ -8,7 +8,8 @@ import JobView from "../views/JobView.vue";
 import JobDescriptionView from "../views/JobDescriptionView.vue";
 import ApplyJobView from "../views/ApplyJobView.vue";
 import creteJobView from "../views/company/creteJobView.vue";
-import UserProfilePageView from '../views/profile/user/UserProfilePageView.vue';
+import UserProfilePageView from "../views/profile/user/UserProfilePageView.vue";
+import CompanyProfilePageView from '../views/profile/company.vue/CompanyProfilePageView.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -38,9 +39,15 @@ const router = createRouter({
       component: creteJobView,
     },
     {
-      path: '/jobs/user/profile' , 
+      path: '/jobs/userprofile' , 
       name: 'profile',
       component : UserProfilePageView
+
+    },
+    {
+      path: '/jobs/companyprofile' , 
+      name: 'profile',
+      component : CompanyProfilePageView
 
     }
   ],

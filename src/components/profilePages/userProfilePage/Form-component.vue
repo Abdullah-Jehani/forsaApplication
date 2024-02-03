@@ -1,8 +1,8 @@
   <template>
     <div class="flex bg-secondaryColor rounded-lg container w-full">
-      <form class=" w-1/2 mt-3 mr-22">
-        <ul>
-          <li>
+      <form class=" w-1/2 mt-3 ">
+        <ul >
+          <li class="float-left ml-40">
             <input-component :disabled="isDisabled" v-model="companyName">
               <template v-slot>اسم المستخدم</template>
             </input-component >
@@ -12,11 +12,12 @@
             <input-component :disabled="isDisabled">
               <template v-slot>رقم الهاتف</template>
             </input-component>
-            <input-component :disabled="isDisabled">
+            <input-component :disabled="isDisabled" :isDropdowncity="true">
               <template v-slot> الموقع</template>
             </input-component>
           </li>
-        <li><button @click.prevent="toggleEditMode" class=" text font-cairo mt-10 mr-20">{{ isDisabled ? 'تعديل' : 'حفظ' }}</button>
+        <li class="float-left ml-60">
+          <button @click.prevent="toggleEditMode" class=" text font-cairo mt-10 mr-20">{{ isDisabled ? 'تعديل' : 'حفظ' }}</button>
         </li>
         </ul>
       </form>
@@ -26,8 +27,8 @@
             <input-component :isPassword="true" :disabled="isDisabled">
               <template v-slot>رمز المرور</template>
             </input-component>
-            <input-component :disabled="isDisabled">
-              <template v-slot>العنوان</template>
+            <input-component :disabled="isDisabled" :isDropdowntype="true">
+              <template v-slot>المسمى الوظيفي</template>
             </input-component >
             <input-component :disabled="isDisabled" :isInputMessage="true">
               <template v-slot> السيرة</template>
