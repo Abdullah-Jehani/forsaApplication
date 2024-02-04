@@ -15,6 +15,8 @@ import SignUpView from '../views/authentication/user/SignUpView.vue';
 import SignUpViewCompany from '../views/authentication/company/SignUpView.vue';
 import detailsView from '../views/authentication/company/detailsView.vue';
 import logoView from '../views/authentication/company/logoView.vue';
+import UserDetailsView from '../views/authentication/user/UserDetailsView.vue';
+import profilePictureView from '../views/authentication/user/profilePictureView.vue';
 
 
 
@@ -63,6 +65,16 @@ const router = createRouter({
       name: 'signup',
       component :SignUpView
     } , 
+    {
+      path: '/AccountType/usersignup/details' , 
+      name: 'UserDetailsView',
+      component :UserDetailsView
+    },
+    {
+      path: '/AccountType/usersignup/details/photo' ,
+      name: 'profilePictureView',
+      component :profilePictureView
+    },
       {
       path: '/AccountType/companysignup' , 
       name: 'SignUpViewCompany',
