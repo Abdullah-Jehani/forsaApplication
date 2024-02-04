@@ -1,6 +1,9 @@
 <template>
-    <div class="flex">
-        <div class="photo h-full"></div>
+    <div class="flex"> 
+        <div class="photo h-full w-1/2">
+              <img class="img" src="../../../assets/photos/companywall.avif" alt="">
+
+        </div>       
         <div class="container bg-primaryColor h-full w-1/2">
             <div class="mr-48 font-cairo mt-10">
                 <h1 class="text-4xl font-bold text-white">مرحبا بك</h1>
@@ -66,9 +69,10 @@ const isFormValid = computed(() => {
 </script>
 
 <style scoped>
-.photo {
-    width: 850px;
+
+.img {
     height: 100vh;
+    width: 1000px;
 }
 
 .container {

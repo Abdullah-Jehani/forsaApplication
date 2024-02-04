@@ -14,6 +14,8 @@ import loginView from '../views/authentication/loginView.vue';
 import SignUpView from '../views/authentication/user/SignUpView.vue';
 import SignUpViewCompany from '../views/authentication/company/SignUpView.vue';
 import detailsView from '../views/authentication/company/detailsView.vue';
+import logoView from '../views/authentication/company/logoView.vue';
+
 
 
 const router = createRouter({
@@ -70,6 +72,11 @@ const router = createRouter({
       path: '/AccountType/companysignup/details' , 
       name: 'detailsView',
       component :detailsView
+    } , 
+     {
+      path: '/AccountType/companysignup/details/logo' , 
+      name: 'logoView',
+      component :logoView
     } , 
      {
       path: '/login' , 

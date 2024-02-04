@@ -1,6 +1,9 @@
 <template>
     <div class="flex">
-        <div class="photo h-full"></div>
+         <div class="photo h-full w-1/2">
+                  <img class="img" src="../../../assets/photos/companywall.avif" alt="">
+
+            </div>   
         <div class="container bg-primaryColor h-full w-1/2">
             <div class="mr-48 font-cairo mt-10">
                 <h1 class="text-4xl font-bold text-white">اقتربت من النهاية !</h1>
@@ -38,7 +41,7 @@
                         <div v-if="isFormValid">
                             <button :disabled="!isFormValid || !agreeTerms"
                                 class="bg-secondaryColor text-primaryColor py-2 px-6 rounded-lg font-semibold transition duration-300 ease-in-out hover:bg-secondaryColorHover focus:outline-none focus:bg-secondaryColorHover mt-12 w-1/2">
-                                <router-link :to="'/AccountType/companysignup/details'">
+                                <router-link :to="'/AccountType/companysignup/details/logo'">
                                     التالي
                                 </router-link>
                             </button>
@@ -48,6 +51,8 @@
                 </div>
             </div>
         </div>
+
+     
     </div>
 </template>
 
@@ -73,9 +78,9 @@ const isFormValid = computed(() => {
 </script>
 
 <style scoped>
-.photo {
-    width: 850px;
+.img {
     height: 100vh;
+    width: 1000px;
 }
 
 .container {
