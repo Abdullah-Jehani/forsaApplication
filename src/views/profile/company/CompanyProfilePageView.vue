@@ -1,7 +1,7 @@
 <script setup>
-import formComponent from '../../../components/profilePages/userProfilePage/Form-component.vue';
-import backbuttonComponent from '../../../components/profilePages/userProfilePage/backbuttonComponent.vue';
-import centerPicture from '../../../components/profilePages/userProfilePage/centerPicture.vue';
+import formComponent from '../../../components/profilePages/enterpriseProfilePage/form-component.vue';
+import backbuttonComponent from '../../../components/profilePages/enterpriseProfilePage/backbuttonComponent.vue';
+import centerPicture from '../../../components/profilePages/enterpriseProfilePage/centerPicture.vue';
 </script>
 <template>
     <div class="page-container bg-primaryColor">

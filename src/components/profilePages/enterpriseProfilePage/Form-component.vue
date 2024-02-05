@@ -1,48 +1,46 @@
 <template>
-  <div class="flex bg-secondaryColor rounded-lg container w-full">
-    <form class=" w-1/2 mt-3 mr-22">
-        <ul>
-          <li>
-            <input-component :disabled="isDisabled" v-model="companyName">
-              <template v-slot>اسم الشركة</template>
-            </input-component >
-            <input-component :disabled="isDisabled" :isEmail="true">
-              <template v-slot>البريد الالكتروني</template>
-            </input-component>
-            <input-component :disabled="isDisabled">
-              <template v-slot>رقم الهاتف</template>
-            </input-component>
-            <input-component :disabled="isDisabled" v-model="companyType">
-              <template v-slot>تخصص المؤسسة</template>
-            </input-component>
-          </li>
-        <li><button @click.prevent="toggleEditMode" class=" text font-cairo mt-10 mr-20">{{ isDisabled ? 'تعديل' : 'حفظ' }}</button>
+  <div class="flex bg-white rounded-lg container w-full">
+    <form class=" w-1/2 mt-3 mr-32 ">
+      <ul>
+        <li>
+          <input-component :disabled="isDisabled" v-model="companyName">
+            <template v-slot>اسم الشركة</template>
+          </input-component>
+          <input-component :disabled="isDisabled" :isEmail="true">
+            <template v-slot>البريد الالكتروني</template>
+          </input-component>
+          <input-component :disabled="isDisabled">
+            <template v-slot>رقم الهاتف</template>
+          </input-component>
+          <input-component :disabled="isDisabled" v-model="companyType" :isDropdowntype="true">
+            <template v-slot>تخصص المؤسسة</template>
+          </input-component>
         </li>
-        </ul>
-      </form>
-      <form class="w-1 mr-1 mt-3">
-        <ul>
-          <li>
-            <input-component :isPassword="true" :disabled="isDisabled">
-              <template v-slot>رمز المرور</template>
-            </input-component>
-            <input-component :disabled="isDisabled">
-              <template v-slot>العنوان</template>
-            </input-component >
-            <input-component :disabled="isDisabled" :isInputMessage="true">
-              <template v-slot> السيرة</template>
-            </input-component>
-            <input-component :disabled="isDisabled">
-              <template v-slot> الموقع</template>
-            </input-component>
-          </li>
-        </ul>
-      </form>
-    </div>
+        <li><button @click.prevent="toggleEditMode" class=" text font-cairo mt-10 mr-20">{{ isDisabled ? 'تعديل' : 'حفظ'
+        }}</button>
+        </li>
+      </ul>
+    </form>
+    <form class="w-1 mr-1 mt-3">
+      <ul>
+        <li>
+          <input-component :isPassword="true" :disabled="isDisabled">
+            <template v-slot>رمز المرور</template>
+          </input-component>
+
+          <input-component :disabled="isDisabled" :isInputMessage="true">
+            <template v-slot> بايو</template>
+          </input-component>
+          <input-component :disabled="isDisabled" :isDropdowncity="true">
+            <template v-slot> الموقع</template>
+          </input-component>
+        </li>
+      </ul>
+    </form>
+  </div>
 </template>
 <style scoped>
-
-.text{
+.text {
   background-color: #D9D9D9;
   color: black;
   border: 1px solid #000000;
@@ -50,10 +48,10 @@
   width: 200px;
   border-radius: 8px;
 }
-.container{
-  height:65vh ;
-  margin-right: 20px;
-  margin-bottom: 10px;
+
+.container {
+  height: 65vh;
+
 }
 </style>
 <script setup>

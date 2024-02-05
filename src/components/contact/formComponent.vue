@@ -5,12 +5,12 @@
         <inputComponent > <template v-slot:label>البريد الالكتروني</template></inputComponent>
         <inputComponent> <template v-slot:label> الاسم الكامل</template></inputComponent>
         <inputComponent :is-input-message="true" > <template v-slot:label>الرسالة </template></inputComponent>
-        <buttonComponent class="grid place-items-center pr-32 pt-12">ارسال</buttonComponent>
+        <buttonComponent class="grid place-items-center pr-32 pt-12 ">ارسال</buttonComponent>
 
     </form>
 
     <div class="ml-4">
-        <img class="image" src="../../assets/photos/bro4.jpg" alt="">
+        <img class="image" src="../../assets/photos/girl.png" alt="">
     </div>
     </div>
    

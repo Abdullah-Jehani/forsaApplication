@@ -69,9 +69,9 @@ const isLoginValid = computed(() => {
 
 <style scoped>
 .img {
-    margin-top: 30px;
-    height: 600px;
-    width: 250px;
+    margin-top: 130px;
+    height: 450px;
+    width: 300px;
 }
 
 .container {
