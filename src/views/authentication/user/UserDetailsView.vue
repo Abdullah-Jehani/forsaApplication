@@ -18,7 +18,7 @@
                         </div>
                         <div class="mb-12">
                             <label for="email" class="text-white font-light">الموقع</label>
-                            <input v-model="email" type="email" id="email"
+                            <input v-model="location" type="location" id="location"
                                 class="border-2 border-gray-300 bg-white h-12 px-5 w-1/2 rounded-md text-sm focus:outline-none focus:border-primaryColor"
                                 placeholder=" بنغازي , شارع دبي">
                         </div>
@@ -55,13 +55,13 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 const username = ref('');
-const email = ref('');
+const location = ref('');
 const specialization = ref('تقنية المعلومات');
 
 const isFormValid = computed(() => {
     const phoneRegex = /^(091|092|093|094)\d{7}$/;
     const isPhoneValid = phoneRegex.test(username.value);
-    const isEmailValid = email.value !== '';
+    const isEmailValid = location.value !== '';
     const isSpecializationValid = specialization.value !== '';
 
     return isPhoneValid && isEmailValid && isSpecializationValid;

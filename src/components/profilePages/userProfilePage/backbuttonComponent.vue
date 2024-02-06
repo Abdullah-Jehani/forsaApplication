@@ -1,5 +1,6 @@
 <template>
   <div>
+   <router-link to="/jobs">
    <button class=" float-left hover:duration-100 buttonColor textClass" 
    :class="[buttonClass, textClass]">
    <div class=" top-0 mt-1 w-5 h-5 float-left">
@@ -7,6 +8,7 @@
    </div>
    العودة
  </button>
+   </router-link>
      <slot></slot>
  </div>
    </template>
