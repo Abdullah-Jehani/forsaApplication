@@ -1,14 +1,10 @@
-<script setup>
-import buttonComponentVue from './components/buttonComponent.vue'
-</script>
-
 <template>
-  <div>
-    <buttonComponentVue />
+  <main>
+    <RouterView />
+  </main>
 
-  </div>
 </template>
 
-<style scoped>
-
-</style>
+<script setup>
+import {RouterView} from 'vue-router';
+</script>
